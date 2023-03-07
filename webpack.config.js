@@ -22,7 +22,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/static' }
+        { from: path.resolve(__dirname, 'src', 'static'), to: path.resolve(__dirname, 'dist') }
       ]
     })
   ],
